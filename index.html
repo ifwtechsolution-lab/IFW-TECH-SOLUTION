@@ -8,7 +8,9 @@
     <meta name="description" content="Professional UI/UX, Web Development & Game Design Solutions. We build modern websites, apps and premium game experiences.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Lucide Icons -->
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.473.0/dist/umd/lucide.min.js"></script>
   </head>
@@ -39,15 +41,26 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
           <div class="hero-bg-wrapper">
-            <img src="/hero_modern.png" alt="IFW Tech Solutions Background">
+            <img src="/hero_cyan_tech.png" alt="IFW Tech Solutions Background">
           </div>
+          
           <div class="container">
-            <div class="hero-content glass-hero reveal">
-              <h1 class="reveal">We Build Modern <span class="gradient-text">Websites, Apps</span> & Game Experiences</h1>
-              <p class="reveal">Professional UI/UX, Web Development & Game Design Solutions. We create immersive digital products that drive results.</p>
-              <div class="hero-btns reveal">
-                <a href="#contact" class="btn btn-primary">Get Started</a>
-                <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+            <!-- Glass Container -->
+            <div class="hero-glass-card reveal">
+              <div class="hero-content">
+                <div class="hero-badge reveal">
+                  <span class="badge-dot"></span>
+                  Digital Excellence Redefined
+                </div>
+                <h1 class="reveal">
+                  Transforming Ideas Into <br>
+                  <span class="gradient-text">Digital Reality</span>
+                </h1>
+                <p class="reveal">We build high-performance websites, premium apps, and immersive game experiences that push the boundaries of technology.</p>
+                <div class="hero-btns reveal">
+                  <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                  <a href="#portfolio" class="btn btn-outline">Explore Work</a>
+                </div>
               </div>
             </div>
           </div>
@@ -287,23 +300,68 @@
               <span class="subtitle">Testimonials</span>
               <h2>What Our Clients Say</h2>
             </div>
-            <div class="grid testimonials-grid">
-              <div class="card testimonial-card reveal">
-                <div class="stars">★★★★★</div>
-                <p>"IFW Tech transformed our business with a stunning website. Their attention to detail is unmatched."</p>
-                <div class="client">
-                  <strong>Alex Johnson</strong>
-                  <span>CEO, TechVentures</span>
+            <!-- Swiper Wrapper -->
+            <div class="swiper-outer-wrapper reveal">
+              <!-- Swiper -->
+              <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card testimonial-card">
+                      <div class="stars">★★★★★</div>
+                      <p>"IFW Tech transformed our business with a stunning website. Their attention to detail is unmatched."</p>
+                      <div class="client">
+                        <strong>Alex Johnson</strong>
+                        <span>CEO, TechVentures</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card testimonial-card">
+                      <div class="stars">★★★★★</div>
+                      <p>"The game they developed for us exceeded all expectations. Smooth mechanics and great art!"</p>
+                      <div class="client">
+                        <strong>Sarah Miller</strong>
+                        <span>Founder, IndieGames Studio</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card testimonial-card">
+                      <div class="stars">★★★★★</div>
+                      <p>"The mobile app is flawless. Our users love the intuitive design and speed. Highly recommend IFW!"</p>
+                      <div class="client">
+                        <strong>David Chen</strong>
+                        <span>Product Manager, Innovate</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card testimonial-card">
+                      <div class="stars">★★★★★</div>
+                      <p>"Best graphic design work we've ever had. They captured our brand essence perfectly with the 3D icons."</p>
+                      <div class="client">
+                        <strong>Emily White</strong>
+                        <span>Creative Director, Visionary</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card testimonial-card">
+                      <div class="stars">★★★★★</div>
+                      <p>"Professionalism at its peak. Every step of the development was transparent and high-quality."</p>
+                      <div class="client">
+                        <strong>Michael Brown</strong>
+                        <span>CTO, GameFlow</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="card testimonial-card reveal">
-                <div class="stars">★★★★★</div>
-                <p>"The game they developed for us exceeded all expectations. Smooth mechanics and great art!"</p>
-                <div class="client">
-                  <strong>Sarah Miller</strong>
-                  <span>Founder, IndieGames Studio</span>
-                </div>
-              </div>
+              <!-- Swiper Navigation (Placed OUTSIDE swiper div) -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!-- Swiper Pagination -->
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </section>
@@ -436,6 +494,8 @@
         </div>
       </footer>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/src/main.js"></script>
     <script>
       // Initialize icons
